@@ -23,7 +23,7 @@ resource "aws_instance" "shopit-server" {
   instance_type          = "t2.micro"
   availability_zone      = "us-east-1a"
   key_name               = "memorykeypair"
-  vpc_security_group_ids = [aws_security_group.my_asg.id]
+  vpc_security_group_ids = [aws_security_group.my_sg.id]
 
   tags = {
     "Name" = "Ubuntu Nginx server 1"
