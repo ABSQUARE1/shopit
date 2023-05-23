@@ -80,6 +80,7 @@ jobs:
             sudo rm -rf /etc/nginx/sites-available/default
             sudo cp default /etc/nginx/sites-available/ -r
             sudo systemctl restart nginx
+            echo "done"
 
 
 
